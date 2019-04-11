@@ -1,1 +1,21 @@
-“Hello World”
+var article = '<div style="text-align:center;">《静夜思》· 李白<br />床前明月光，<br />疑是地上霜。 <br />举头望明月， <br />低头思故乡。<br /><img src="http://www.xiexingcun.com/Poetry/6/images/53e.jpg" alt="" /><br /><img src="http://www.xiexingcun.com/Poetry/6/images/53.jpg" alt="" /><br /><br /><img src="http://www.xiexingcun.com/Poetry/6/images/53b.jpg" alt="" /><br /></div>';
+that.setData({ detailInfo: article });
+
+var html = '&lt;div&gt;&lt;p&gt;第一行&lt;/p&gt;&lt;p&gt;第二行&lt;/p&gt;&lt;/div&gt;';
+var newHtml = this.htmlEscapt(html);
+this.setData({ detailInfo: newHtml });
+htmlEscape: function(html){
+    var reg = /(&lt;)|(&gt;)|(&amp;)|(&quot;)/g;
+    return html.replace(reg,function(match){
+		switch(match){
+			case "&lt;":
+			    return "<";
+			case "&gt;":
+			    return ">"
+			case "&amp;":
+				return "&";
+			case "&quot;":
+				return "\""
+		}
+	});
+}
