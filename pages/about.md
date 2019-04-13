@@ -14,10 +14,10 @@ Admiring the "art of elegant coding."
 
 Firmly believe that practice makes perfect and strives to change lives.
 
-## 联系
+## Contact information
 
 {% for website in site.data.social %}
-* {{ website.sitename }}：[@{{ website.name }}]({{ website.url }})
+* {{ website.sitename }}：[@{{ website.sitename }}]({{ website.url }})
 {% endfor %}
 
 ## Skill Keywords
