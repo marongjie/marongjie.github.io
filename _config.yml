@@ -5,9 +5,9 @@ baseurl:
 url: https://marongjie.github.io
 date_format: "ordinal"
 title: Ma Rongjie's blog
-subtitle: "代码改变人生"
-description: "马荣杰的个人博客"
-keywords: 码志, Rongjie Ma, marongjie, marongjie
+subtitle: "Knowledge changes fate, code changes life"
+description: "Ma Rongjie's blog"
+keywords: Rongjie Ma, marongjie, marongjie
 timezone: Asia/Shanghai
 encoding: "utf-8"
 side_bar_repo_limit: 5
