@@ -103,7 +103,7 @@ gitment:
 # https://github.com/gitalk/gitalk#install
 gitalk:
     owner: marongjie
-    repo: blog-comments
+    repo: marongjie.github.io
     clientID: 6e046752dde20ec48594
     clientSecret: 89036ff21027d41633fd0485107a4c5a0c8acb87
     language: en
