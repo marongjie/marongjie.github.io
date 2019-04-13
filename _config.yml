@@ -106,6 +106,7 @@ gitalk:
     repo: blog-comments
     clientID: 6e046752dde20ec48594
     clientSecret: 89036ff21027d41633fd0485107a4c5a0c8acb87
+    language: en
 # 在使用其它评论组件时可点击显示 Disqus
 lazy_load_disqus : false
 

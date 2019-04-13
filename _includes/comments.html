@@ -100,6 +100,7 @@
             admin: ['{{ site.gitalk.owner }}'],
             labels: ['gitment'],
             perPage: 50,
+	    language: '{{ site.gitalk.language }}',
         })
         gitalk.render('gitalk-container')
         </script>
