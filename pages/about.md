@@ -8,11 +8,11 @@ menu: 关于
 permalink: /about/
 ---
 
-我是马荣杰，码而生，码而立。
+I am Ma Rongjie, born of code and code.
 
-仰慕「优雅编码的艺术」。
+Admiring the "art of elegant coding."
 
-坚信熟能生巧，努力改变人生。
+Firmly believe that practice makes perfect and strives to change lives.
 
 ## 联系
 
