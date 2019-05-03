@@ -83,7 +83,7 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 可以从Issues中删除评论
 
-可以在asset/css/pages/index.css中修改home.sit-header修改主页背景颜色，也可加入图片
+可以在asset/css/pages/index.css中修改home.sit-header修改主页背景颜色，也可加入图片，可以修改字体的颜色
 
 可以在config.yml配置github标签数量
 
