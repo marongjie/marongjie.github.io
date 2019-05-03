@@ -1,126 +1,43 @@
-# ---------------- #
-#   Main Configs   #
-# ---------------- #
-baseurl:
-url: https://marongjie.github.io
-date_format: "ordinal"
-title: Ma Rongjie's blog
-subtitle: "Always believe that something wonderful is about to happen"
-description: "Ma Rongjie's blog"
-keywords: Rongjie Ma, marongjie, marongjie
-timezone: Asia/Shanghai
-encoding: "utf-8"
-side_bar_repo_limit: 5
+# Site settings
+title: Jekyll-Uno
+description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/jekyll-uno'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
 
-# ---------------- #
-#      Author      #
-# ---------------- #
-author: Rongjie Ma
-organization: 
-organization_url: 
-github_username: marongjie
-location: Beijing, China
-email: 584607487@qq.com
+author:
+  name: 'Josh Gerdes'
+  email: josh@joshgerdes.com
+  twitter_username: joshgerdes
+  facebook_username: joshgerdes
+  github_username:  joshgerdes
+  linkedin_username:  joshgerdes
 
-# ---------------- #
-#    Navigation    #
-# ---------------- #
-navs:
+defaults:
   -
-    href: /
-    label: Home
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
-  -
-    href: /categories/
-    label: Categories
-
-#   -
-#     href: /archives/
-#     label: 归档
-
-  -
-    href: /wiki/
-    label: Wiki
-
-  -
-    href: /links/
-    label: Links
-
-  -
-    href: /about/
-    label: About
-
-# ---------------- #
-#       RSS        #
-# ---------------- #
-subscribe_rss: /feed.xml
-
-# ---------------- #
-#      Jekyll      #
-# ---------------- #
-markdown: kramdown
-kramdown:
-    input: GFM
-highlighter: rouge
+# Build settings
+destination: _site
 paginate: 10
-lsi: false
-quiet: false
-excerpt_separator: "\n\n"
-permalink: /:year/:month/:day/:title/
-gems:
-    - jekyll-github-metadata
-    - rouge
-#     - jekyll-html-pipeline
-    - jekyll-paginate
-    - jekyll-sitemap
-    - jekyll-feed
-    - jemoji
-#     - jekyll-mentions
-collections:
-    wiki:
-        output: true
-        permalink: /wiki/:path/
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
 
-repository: marongjie/marongjie.github.io
+sass:
+    sass_dir: _sass
+    style: compressed
 
-# ---------------- #
-#      Comments    #
-# ---------------- #
-# support provider: disqus, gitment, gitalk
-comments_provider: gitalk
-# !!!重要!!! 请修改下面这些信息为你自己申请的
-# !!!Important!!! Please modify infos below to yours
-# https://disqus.com
-disqus:
-    username: 
-# https://imsun.net/posts/gitment-introduction/
-gitment:
-    owner: marongjie
-    repo: blog-comments
-    oauth:
-        client_id: 6e046752dde20ec48594
-        client_secret: 89036ff21027d41633fd0485107a4c5a0c8acb87
-# https://github.com/gitalk/gitalk#install
-gitalk:
-    owner: marongjie
-    repo: marongjie.github.io
-    clientID: 6e046752dde20ec48594
-    clientSecret: 89036ff21027d41633fd0485107a4c5a0c8acb87
-    language: en
-# 在使用其它评论组件时可点击显示 Disqus
-lazy_load_disqus : false
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-# ---------------- #
-#      Search      #
-# ---------------- #
-simple_jekyll_search:
-    # 是否支持全文搜索
-    fulltext: false
-    # 最多显示多少条搜索结果
-    limit: 10
-
-# ---------------- #
-#    Analytics     #
-# ---------------- #
-google:
-    analytics_id: UA-80669434-1
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']

@@ -1,89 +1,99 @@
-<!DOCTYPE html>
-<html lang="zh-cmn-Hans" prefix="og: http://ogp.me/ns#" class="han-init">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>{% if page.title %}{{ page.title }} &mdash; {% endif %}{{ site.title }}</title>
-    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/primer-css/css/primer.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/primer-markdown/dist/user-content.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/octicons/octicons/octicons.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/components/collection.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/components/repo-card.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/sections/repo-list.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/sections/mini-repo-list.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/components/boxed-group.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/common.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/vendor/share.js/dist/css/share.min.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/globals/responsive.css">
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/posts/index.css">
-    <!-- Latest compiled and minified CSS -->
-    {% for css in page.css %}
-    <link rel="stylesheet" href="{{ site.url }}/assets/css/{{css}}">
-    {% endfor %}
+<span class="mobile btn-mobile-menu">
+  <i class="icon icon-list btn-mobile-menu__icon"></i>
+  <i class="icon icon-x-circle btn-mobile-close__icon hidden"></i>
+</span>
 
-    {% if site.ios_app_name %}
-       <meta name="apple-mobile-web-app-capable" content="yes">
-       <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    {% endif %}
-    <link rel="canonical" href="{{ page.url | prepend: site.url }}">
-    <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}{{ site.subscribe_rss }}">
-    <link rel="shortcut icon" href="{{ site.url }}/fav.jpg">
-    {% if page.title %}
-    <meta property="og:title" content="{{ page.title }}">
-      {% if page.keywords %}
-      {% assign keywords = page.keywords %}
-      {% else %}
-      {% assign keywords = site.keywords %}
-      {% endif %}
-    <meta name="keywords" content="{{ keywords | strip_html | strip_newlines}}">
-    <meta name="og:keywords" content="{{ keywords | strip_html | strip_newlines}}">
-      {% if page.excerpt %}
-    <meta name="description" content="{{ page.excerpt | strip_html | strip_newlines}}">
-    <meta name="og:description" content="{{ page.excerpt | strip_html | strip_newlines}}">
-      {% else if page.description %}
-    <meta name="description" content="{{ page.description | strip_html | strip_newlines}}">
-    <meta name="og:description" content="{{ page.description | strip_html | strip_newlines}}">
-      {% else if content %}
-    <meta name="description" content="{{ content | strip_html | strip_newlines | truncatewords: 100 }}">
-    <meta name="og:description" content="{{ content | strip_html | strip_newlines | truncatewords: 100 }}">
-      {% endif %}
-    {% else %}
-    <meta name="keywords" content="{{ site.keywords }}">
-    <meta name="description" content="{{ site.description }}">
-    {% endif %}
-    {% if page.og_image_url %}
-    <meta property="og:image" content="{{ page.og_image_url }}">
-    {% else %}
-        {% if page.photo_url %}
-    <meta property="og:image" content="{{ page.photo_url }}">
-        {% endif %}
-    {% endif %}
-    <meta property="og:url" content="{{ site.url }}{{ page.url | remove_first:'index.html' }}">
-    <meta property="og:site_name" content="{{ site.title }}">
-    <meta property="og:type" content="article">
-    <meta property="og:locale" content="zh_CN" />
-    {% if page.date %}
-    <meta property="article:published_time" content="{{ page.date | date: '%Y-%m-%d' }}">
-    {% endif %}
-    <script src="{{ site.url }}/assets/vendor/jquery/dist/jquery.min.js"></script>
-    <script src="{{ site.url }}/assets/js/jquery-ui.js"></script>
-    <script src="{{ site.url }}/assets/js/main.js"></script>
-</head>
-<body class="{{ page.class }}" data-mz="{{ page.class }}">
-    <header class="site-header">
-        <div class="container">
-            <h1><a href="{{ site.url }}/" title="{{ site.title }}"><span class="octicon octicon-mark-github"></span> {{ site.title }}</a></h1>
-            <button class="collapsed mobile-visible" type="button" onclick="toggleMenu();">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <nav class="site-header-nav" role="navigation">
-                {% for nav in site.navs %}
-                <a href="{{ site.url }}{{ nav.href }}" class="{% if page.menu == nav.label %} selected {% endif %} site-header-nav-item" target="{{ nav.target | default: _self }}" title="{{ nav.label }}">{{ nav.label }}</a>
-                {% endfor %}
-            </nav>
+<header class="panel-cover" style="background-image: url({{ site.baseurl }}/images/cover.jpg)">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+        <a href="{{ site.baseurl }}/" title="link to home of {{ site.title }}">
+          <img src="{{ site.baseurl }}/images/profile.jpg" class="user-image" alt="My Profile Photo">
+          <h1 class="panel-cover__title panel-title">{{ site.title }}</h1>
+        </a>
+        <hr class="panel-cover__divider">
+        <p class="panel-cover__description">{{ site.description }}</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary">
+
+        <div class="navigation-wrapper">
+
+          <nav class="cover-navigation cover-navigation--primary">
+            <ul class="navigation">
+              <li class="navigation__item"><a href="{{ site.baseurl }}/#blog" title="link to {{ site.title }} blog" class="blog-button">Blog</a></li>
+            </ul>
+          </nav>
+
+          <nav class="cover-navigation navigation--social">
+            <ul class="navigation">
+
+            {% if site.author.twitter_username %}
+              <!-- Twitter -->
+              <li class="navigation__item">
+                <a href="http://twitter.com/{{ site.author.twitter_username }}" title="@{{ site.author.twitter_username }} on Twitter" target="_blank">
+                  <i class="icon icon-social-twitter"></i>
+                  <span class="label">Twitter</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.facebook_username %}
+              <!-- Facebook -->
+              <li class="navigation__item">
+                <a href="http://fb.me/{{ site.author.facebook_username }}" title="{{ site.author.facebook_username }} on Facebook" target="_blank">
+                  <i class="icon icon-social-facebook"></i>
+                  <span class="label">Facebook</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.linkedin_username %}
+              <!-- LinkedIn -->
+              <li class="navigation__item">
+                <a href="https://www.linkedin.com/in/{{ site.author.linkedin_username }}" title="{{ site.author.linkedin_username }} on LinkedIn" target="_blank">
+                  <i class="icon icon-social-linkedin"></i>
+                  <span class="label">LinkedIn</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.github_username %}
+              <!-- GitHub -->
+              <li class="navigation__item">
+                <a href="https://www.github.com/{{ site.author.github_username }}" title="{{ site.author.github_username }} on GitHub" target="_blank">
+                  <i class="icon icon-social-github"></i>
+                  <span class="label">GitHub</span>
+                </a>
+              </li>
+            {% endif %}
+
+            {% if site.author.email %}
+              <!-- Email -->
+              <li class="navigation__item">
+                <a href="mailto:{{ site.author.email }}" title="Email {{ site.author.email }}" target="_blank">
+                  <i class="icon icon-mail"></i>
+                  <span class="label">Email</span>
+                </a>
+              </li>
+            {% endif %}
+
+            <!-- RSS -->
+            <li class="navigation__item">
+              <a href="{{ site.baseurl }}/feed.xml" title="Subscribe" target="_blank">
+                <i class="icon icon-rss"></i>
+                <span class="label">RSS</span>
+              </a>
+            </li>
+
+            </ul>
+          </nav>
+
         </div>
-    </header>
-    <!-- / header -->
+
+      </div>
+
+    </div>
+
+    <div class="panel-cover--overlay"></div>
+  </div>
+</header>
