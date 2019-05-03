@@ -8,11 +8,9 @@ menu: 关于
 permalink: /about/
 ---
 
-I am Ma Rongjie, born of code and code.
+I am Ma Rongjie!
 
-Admiring the "art of elegant coding."
-
-Firmly believe that practice makes perfect and strives to change lives.
+Welcome to my blog!
 
 ## Contact information
 
@@ -30,5 +28,7 @@ Firmly believe that practice makes perfect and strives to change lives.
 {% endfor %}
 </div>
 {% endfor %}
+
+## Travel
 
 ![](/images/posts/blog/1.png)
