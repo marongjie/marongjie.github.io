@@ -8,9 +8,9 @@ menu: 关于
 permalink: /about/
 ---
 
-*I am Ma Rongjie!
+*I am Ma Rongjie!*
 
-Welcome to my blog!*
+*Welcome to my blog!*
 
 ## Contact information
 
