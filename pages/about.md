@@ -30,3 +30,5 @@ Firmly believe that practice makes perfect and strives to change lives.
 {% endfor %}
 </div>
 {% endfor %}
+
+![](/images/posts/blog/1.png)
