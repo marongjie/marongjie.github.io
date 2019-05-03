@@ -1,7 +1,7 @@
 .home .banner,
 .home .site-header {
     background: #33CC00;
-    background-image: url('/images/posts/blog/1.png')
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='/images/posts/blog/1.png',sizingMethod='scale');
     color: #fff
 }
 
