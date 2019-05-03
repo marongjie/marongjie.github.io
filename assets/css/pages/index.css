@@ -1,7 +1,7 @@
 .home .banner,
 .home .site-header {
     background: #33CC00;
-    background:transparent url(/images/posts/blog/1.png) no-repeat scroll -140px -20px; 
+    background:transparent url(/images/posts/blog/1.png) no-repeat scroll;
     color: #fff
 }
 
