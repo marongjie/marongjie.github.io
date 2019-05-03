@@ -1,30 +1,42 @@
-# Moon Jekyll Theme [![Donate](https://img.shields.io/badge/paypal-donate-blue.svg)](https://www.paypal.me/taylantatli/0usd)  
-  
-## `Sorry guys but there will be no update until I buy a new laptop.`
-    
-######(If you like this theme or using it, please give a :star: for motivation.)
+# .X [![Build Status](https://travis-ci.org/nandomoreirame/dotX.svg?branch=master)](https://travis-ci.org/nandomoreirame/dotX)
 
-**[Moon](https://taylantatli.github.io/Moon)** is a minimal, one column jekyll theme.
+> Simple & Beautiful Jekyll theme
 
-## Features
-* Minimal, you can focus on your content
-* Responsive
-* Disqus integration
-* Syntax highlighting
-* Optional post image
-* Social icons
-* Page for sharing projects
-* Optional background image
-* Simple navigation menu
-* MathJax support
 
-## Preview
 
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509720/61c61058-01d6-11e6-93ab-0918515ecd56.png)    
-![screenshot of Moon](https://cloud.githubusercontent.com/assets/754514/14509716/61ac6c8e-01d6-11e6-879f-8308883de790.png)
+### [Demo](https://nandomoreirame.github.io/dotX/)
 
-See a [live version of Moon](https://taylantatli.github.io/Moon) hosted on GitHub.
+![dotX - free Jekyll theme](/screenshot.png)
 
-## Getting Started
+---
 
-To learn how to install and use this theme check out the [Setup Guide](https://taylantatli.github.io/Moon/moon-theme/) for more information.
+### Start in 4 steps
+
+1. Download or clone repo `git clone git@github.com:nandomoreirame/dotX.git`
+2. Enter the folder: `cd dotX/`
+3. Install Ruby gems: `bundle install`
+4. Start Jekyll server: `jekyll serve`
+
+Access, [localhost:4000/dotX](http://localhost:4000/dotX)
+
+### Deploy in Github pages in 2 steps
+
+1. Change the variables `GITHUB_REPONAME` and `GITHUB_REPO_BRANCH` in `Rakefile`
+2. Run `rake` or `rake publish` for build and publish on Github
+
+---
+
+### Using Rake tasks
+
+* Create a new page: `rake page name="contact.md"`
+* Create a new post: `rake post title="TITLE OF THE POST"`
+
+---
+
+### Copyright and license
+
+It is under [the MIT license](/LICENSE).
+
+Enjoy :yum:
+
+by [nandomoreira.me](https://nandomoreira.me)
