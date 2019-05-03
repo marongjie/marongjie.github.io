@@ -82,3 +82,5 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 [3]: https://github.com/mzlogin/mzlogin.github.io/issues/2
 
 可以从Issues中删除评论
+
+可以在asset/css/pages/index.css中修改home.sit-header修改主页背景颜色
