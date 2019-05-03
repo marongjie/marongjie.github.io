@@ -87,4 +87,8 @@ Fork 本项目之后，还需要做一些事情才能让你的页面「正确」
 
 可以在config.yml配置github标签数量
 
-About页面用md可以编辑
+About页面用/pages/.md可以编辑
+
+layouts可以修改整个页面布局?
+
+include中可以修改各个小组件，如最下面的脚2019等
