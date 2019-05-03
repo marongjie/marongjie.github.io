@@ -92,3 +92,5 @@ About页面用/pages/.md可以编辑
 layouts可以修改整个页面布局?
 
 include中可以修改各个小组件，如最下面的脚2019等
+
+改变layout/pages下的<section class="co" data-pattern-id="{{ page.title | truncate: 15}}" style="background-color:red">来改变颜色
