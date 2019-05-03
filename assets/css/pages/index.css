@@ -6,7 +6,7 @@
 }
 
 .home .banner .collection-head {
-    color: #fff;
+    color: #555555;
     background: 0 0;
     box-shadow: none;
     -webkit-box-shadow: none
@@ -17,7 +17,7 @@
 }
 
 .home .site-header h1 a {
-    color: #fff
+    color: #000
 }
 
 .home .site-header .site-header-nav-item {
@@ -25,7 +25,7 @@
 }
 
 .home .site-header .site-header-nav-item:hover {
-    color: #fff
+    color: #000
 }
 
 
