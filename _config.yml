@@ -1,46 +1,59 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
-source: source
-destination: _site
-sass:
-  sass_dir: _sass
-  style: expanded # compressed # expanded
-
-# permalink and highlighter
-permalink   : /:year/:title/
-markdown    : kramdown
-highlighter : pygments
-
-# SEO settings
-title: dotX
-description: "A free Jekyll theme for download"
-keywords: "Jekyll, theme, free, download, SEO, blog, web"
 
 # Site settings
-url: http://nandomoreira.me
-baseurl: "/dotX"
-# baseurl: ""
+title: Spectral
+description: |
+  Another fine responsive  
+  site template freebie  
+  crafted by [HTML5 UP](http://html5up.net)
+owner: Your Name # or company name
+first_published: 2016 # if migrating another site, the year of your first publish
+email: your-email@domain.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+social:
+  twitter: https://twitter.com/<username>
+  github: https://github.com/<username>
+  linkedin-square: https://linkedin.com/in/<username>
+  facebook-official: https://facebook.com/<username>
+  google-plus-square: https://plus.google.com/u/0/+<username>
+  #email: /contact/
+  #flickr:
+  #instagram:
+  #youtube-square:
+  #spotify:
+  #stack-overflow:
+  #vimeo:
+  #reddit:
+  #stubleupon:
+  #delicious:
+  #pied-piper:
+  #digg:
+  #soundcloud:
+  #deviantart:
+  #angellist:
+  #tumblr-square:
+  #stackexchange:
+  #weibo:
+  #trello:
+  #foursquare:
+  #linux:
+  #bitbucket-square:
+  #vk:
+  #slack:
+  #vine:
+  #weixin:
+  #yelp:
+  #skyatlas:
+  #leanpub:
+  #connectdevelop:
+  #ils:
+  #forumbee:
+  #tripadvisor:
+  #amazon:
 
-# Author settings
-author:
-  name      : Fernando Moreira
-  job       : Frontend Engineer
-  bio       : "Enthusiast performance, responsive design and usability, always looking for the best project and good coffee."
-  thumb     : /images/author.jpg
-  email     : nandomoreira.me@gmail.com
-  url       : http://nandomoreira.me
-  github    : http://github.com/nandomoreirame
-  twitter   : http://twitter.com/nandomoreirame
-  facebook  : http://facebook.com/fernando.dev
-  linkedin  : http://linkedin.com/in/nandomoreirame
-
-# google_analytics: UA-52446115-1
-repo: http://github.com/nandomoreirame/dotX
-
-# comments
-disqus_shortname: "fernandomoreira"
+# Build settings
+markdown: kramdown
+#sass:
+#  style: compressed
