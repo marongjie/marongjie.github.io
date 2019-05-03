@@ -7,15 +7,15 @@ date_format: "ordinal"
 title: Ma Rongjie's blog
 subtitle: "Always believe that something wonderful is about to happen"
 description: "Ma Rongjie's blog"
-keywords: Rongjie Ma, marongjie, marongjie
+keywords: Ma Rongjie, marongjie, marongjie
 timezone: Asia/Shanghai
 encoding: "utf-8"
-side_bar_repo_limit: 5
+side_bar_repo_limit: 3
 
 # ---------------- #
 #      Author      #
 # ---------------- #
-author: Rongjie Ma
+author: Ma Rongjie
 organization: 
 organization_url: 
 github_username: marongjie
