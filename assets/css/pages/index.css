@@ -1,15 +1,14 @@
 .home .banner,
 .home .site-header {
-    background: #33CC00;
-    background:transparent url(/images/posts/blog/1.png) no-repeat scroll;
     color: #fff
 }
 
 .home .banner .collection-head {
-    color: #555555;
+    color: #fff;
     background: 0 0;
     box-shadow: none;
     -webkit-box-shadow: none
+    background: #33CC00;
 }
 
 .home .site-header {
@@ -17,7 +16,8 @@
 }
 
 .home .site-header h1 a {
-    color: #000
+    background: #33CC00;
+    color: #fff
 }
 
 .home .site-header .site-header-nav-item {
@@ -25,7 +25,8 @@
 }
 
 .home .site-header .site-header-nav-item:hover {
-    color: #000
+    color: #fff
+    background: #33CC00;
 }
 
 
