@@ -1,5 +1,7 @@
 .home .banner,
 .home .site-header {
+    background: #33CC00;
+    background:transparent url(/images/posts/blog/2.png) no-repeat scroll;
     color: #fff
 }
 
@@ -8,7 +10,6 @@
     background: 0 0;
     box-shadow: none;
     -webkit-box-shadow: none
-    background: #33CC00;
 }
 
 .home .site-header {
@@ -16,7 +17,6 @@
 }
 
 .home .site-header h1 a {
-    background: #33CC00;
     color: #fff
 }
 
@@ -26,7 +26,6 @@
 
 .home .site-header .site-header-nav-item:hover {
     color: #fff
-    background: #33CC00;
 }
 
 
